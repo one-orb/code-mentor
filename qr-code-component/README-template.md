@@ -1,6 +1,6 @@
 # Frontend Mentor - QR code component solution
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is my solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -37,9 +37,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
-
+I decided to try this challenge again from scratch. Among the reasons was discovering that in my last attempt to make sure I was using only semantic HTML I had used <figure> completely wrong! I'm now a wee bit wiser and experienced, so let's see what I can improve on from my last attempt, I might even use GitHub and git properly this time.
 ### Built with
-
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
