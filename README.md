@@ -1,5 +1,5 @@
-# Andy's Frontend Mentor Projects
-A collection of all my Frontend Mentor coding projects.
+# Andy's Frontend Mentor Challenges
+A collection of all my Frontend Mentor coding challenges.
 
 ## TOC
-* [QR Code Component](Tobecopiedover.com)
+* [QR Code Component](qr-code-component/index.html)
