@@ -36,7 +36,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
-I decided to try this challenge again from scratch. Among the reasons was discovering that in my last attempt to make sure I was using only semantic HTML I had used <figure> completely wrong! I'm now a wee bit wiser and experienced, so let's see what I can improve on from my last attempt, I might even use GitHub and git properly this time.
+I decided to try this challenge again from scratch. Among the reasons was discovering that in my last attempt to make sure I was using only semantic HTML I had used the `<figure>` tag completely wrong! I'm now a wee bit wiser and experienced, so let's see what I can improve on from my last attempt, I might even use GitHub and git properly this time.
 
 ### Built with
 
