@@ -19,20 +19,12 @@ This is my solution to the [QR code component challenge on Frontend Mentor](http
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![A screenshot of my solution](images/screenshot.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: <https://one-orb.github.io/frontend-mentor/qr-code-component/index.html>
 
 ## My process
 
@@ -43,59 +35,53 @@ I decided to try this challenge again from scratch. Among the reasons was discov
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
 
 ### What I learned
 
-Still getting to grips with how to use Git and GitHub, already made some mistakes with committing a `.DS_Store file` and improperly removing it. But already learning how to use them properly, just need to remember to add a `.gitignore` file before I start committing to the main branch and potentially use the following command to remove it from being tracked while leaving it behind on my hard drive:
+Still getting to grips with how to use Git and GitHub, already made some mistakes with committing a `.DS_Store file` and improperly removing it. But already learning how to use them properly, just need to remember to add a `.gitignore` file before I start committing to the main branch and potentially use the following command to remove it from being tracked while leaving it behind on my local drive:
 
 ```git commands
 $ git rm --cached <FILENAME>
 ```
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I also set myself the challenge of trying to use semantic HTML as much as possible and further challenging myself to not use any `<div>` or `<span>` tags with classes or ids. I think that was where I fell off last time trying to use the `<figure>` tag to contain the card. This time I just used the \<main\> tag as that seemed the most appropriate of the choices, and it is the main (and only) element for the webpage. I even changed the .attribute class that the challenge came with and formatted it with the \<footer\> tag instead, as that was where I wanted it to be on the page. 
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+Building on it further, now that I had a "footer", I had to figure out how to get it down there. As I was using Flexbox to layout the card in the middle, I thought I could use `justify-self` to line it up at the bottom. I was thinking then I'd have the problem of the card not being laid out in the middle, little did I know, `justify-self` doesnt't exist in Flexbox. It took me having a look at other people's solutions and seeing [frontend-mentor's](hisprofilehere) solution to remember that the `position` attribute existed.Even better, if I set it to `absolute` then it would be taken out of the layout calculations so the card's position would still be in the middle based on Flexbox. What a win! I'm immortalising this winning code below:
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+footer {
+  position: absolute;
+  bottom: 5px;
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+I also got a bit obsessed with CSS Resets on this project. I originally went with [Eric Meyer's Classic CSS Reset](insert link here) and it did the trick. However it was huge! And it got rid of some of the stylings that I wanted to keep, like the default `<h3>` styling, makes my life easier with the default styling rather than trying to adjust sizes myself. Through my googling I came across [Josh Comeay's Modern CSS Reset](instert kinke here) that was not only more compact but also did a lot of the things I was looking for. The bonus was Josh doing a great job of explaining each line of code. In this process, I've come to the conclusion that it's never one size fits all, it all depends on what you want to start with on a consistent basis. As a result, I decided not to use a cookie cutter approach but cherry picked the parts I like and the parts that are relevant to my current level. I'll keep adding to it as I need and save it within my personal files to keep as a reference. Here is what my current CSS Reset looks like:
+
+```css
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+etc
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+As these challenges/projects get more complicated I'm assuming that I'll need to get more accustomed to classes and ids rather than avoiding them like I have. A lot of the solutions looked overly complex, even from experienced coders, but looking at "normal" webpages I can see how that seems to be the norm for a lot of these websites. So something to keep in mind as these challenges grow in complexity and size, at some point I will need to use classes and ids not just semantic HTML. 
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+While I've gotten my head around CSS a bit better now, especially with Flexbox, I would still like to work on media queries. I was planning on using it here but as there wasn't a lot of content, there didn't seem to be a need to, Flexbox was enough to keep the content centered. Definitely something to look at and discovering that the inspect mode on Firefox had all the common screen sizes will make it easier to decide how and when to scale everything, I think.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Josh Comeau](https://www.example.com) - A very helpful explanation on a modern CSS Reset with links to other resources. Will continue to add more to my personal reset from Josh's example.
+- [MDN References](https://www.example.com) - Always the best cheat sheet to look up HTML tags and CSS properties.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Andrew Ball](https://one-orb.github.io)
 - Frontend Mentor - [@one-orb](https://www.frontendmentor.io/profile/one-orb)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+- [@such and such's](frontend orofile) [solution](link to his somution here) was super helpful as it reminded me of the position attribute and how to use it properly. 
