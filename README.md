@@ -1,5 +1,8 @@
 # Andy's Frontend Mentor Challenges
+
 A collection of all my Frontend Mentor coding challenges.
 
 ## TOC
-* [QR Code Component](qr-code-component/index.html)
+
+- [QR Code Component](qr-code-component/index.html)
+- [Blog Preview Card](blog-preview-card/index.html)
