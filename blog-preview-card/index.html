@@ -4,44 +4,44 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
         <title>Frontend Mentor | Blog preview card</title>
         <meta name="author" content="Andrew Ball" />
         <meta
             name="description"
-            content="Andrew Ball's solution of Frontend Mentor's Blog Preview Card Challenge"
+           content="Andrew Ball's solution of Frontend Mentor's Blog Preview Card Challenge"
         />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./images/favicon-32x32.png"
-        />
-
+        <!-- TODO: Change the google fonts to use the included files in assets/ -->
         <link rel="stylesheet" href="style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500..800&display=swap" rel="stylesheet">
     </head>
     <body>
+        <main>
+            <img src="assets/images/illustration-article.svg" alt="Blog Display Picture">
 
-        <!-- NEED TO LOOKUP HOW TO PUT IN IMAGES AGAIN! -->
-        <image href="./images/favicon-32x32.png">Blog Display pick</image>
+            <hgroup>
+                <div class="tagline">
+                    <span class="tag">Learning</span>
+                </div>
 
-        <p>Learning</p>
+                <p>Published 21 Dec 2023<p>
 
-        <div class="tag">Published 21 Dec 2023</div>
+                <h3>HTML & CSS foundations</h3>
+            </hgroup>
 
-        <h3>HTML & CSS foundations</h3>
+            <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
 
-        <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
-
-        <p>Greg Hooper</p>
-
-        <div class="attribution">
+            <div class="author">
+                <img src="assets/images/image-avatar.webp" alt="Greg Hooper's photo">
+                <image-avatar class="webp"></image-avatar>
+                <p>Greg Hooper</p>
+            </div>
+        </main>
+        <footer class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
             Coded by <a href="https://www.github.com/one-orb" target="_blank">Andrew Ball</a>.
-        </div>
+        </footer>
     </body>
-</html>
+
