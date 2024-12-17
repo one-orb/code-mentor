@@ -1,4 +1,4 @@
-/* my budding css reset*/
+/* AB CSS Reset */
 
 * {
   box-sizing: border-box;
@@ -9,6 +9,8 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* Main Sheet */
 
 body {
   height: 100vh;
