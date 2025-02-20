@@ -16,3 +16,9 @@
 Network Trash Folder
 Temporary Items
 .apdisk
+
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
